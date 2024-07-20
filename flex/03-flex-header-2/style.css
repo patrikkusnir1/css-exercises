@@ -12,10 +12,12 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0, 0, 0, .1);
-  display: flex;
   /* add display flex */
+  display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 8px;
+  /* padding everywhere */
+  /* align-items: center; */
 }
 
 .profile-image {
@@ -50,20 +52,18 @@ a {
 
 ul {
   list-style-type: none;
-}
-
-ul.links {
   display: flex;
   gap: 16px;
-  align-items: center;
+  /* 16px margin between items */
+  margin: 0;
+  padding: 0;
 }
 
-.push-left {
-  display: flex;
-}
 
+.push-left,
 .push-right {
   display: flex;
+  align-items: center;
   gap: 16px;
-  margin-right: 8px;
+  /* 16px margin between items */
 }
